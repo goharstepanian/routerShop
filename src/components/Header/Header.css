@@ -1,0 +1,27 @@
+
+.header-container {
+  background-color: rgb(16, 35, 64); 
+  padding: 40px 20px;
+  text-align: center;
+  color: rgb(241, 241, 241);
+  animation: fadeIn 1.5s ease-out;
+}
+
+.header-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgb(255, 255, 255); 
+  animation: slideInFromTop 1s ease-out;
+}
+
+
+.header-description {
+  font-size: 1.2rem;
+  color: rgb(220, 220, 220);
+  margin-top: 0;
+  line-height: 1.5;
+  animation: fadeIn 1.5s ease-out;
+}

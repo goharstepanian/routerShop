@@ -1,0 +1,33 @@
+
+nav {
+  background-color: #102340; 
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  animation: slideInFromTop 0.8s ease-out;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(241, 241, 241); 
+  margin: 0 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a.active {
+  color: rgb(87, 166, 209); 
+  transform: scale(1.1); 
+}
+
+nav a:hover {
+  color: #57a6d1; 
+  transform: scale(1.05); 
+}

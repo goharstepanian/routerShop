@@ -1,0 +1,7 @@
+.home{
+    background-image: url("../../assets/header.jpg");
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

@@ -1,0 +1,40 @@
+
+.go-back-btn-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.go-back-btn {
+  background-color: rgb(87, 166, 209);
+  color: rgb(255, 255, 255);
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.go-back-btn:hover {
+  background-color: rgb(62, 125, 155);
+  transform: scale(1.05);
+}
+
+.go-back-btn:focus {
+  outline: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.go-back-btn {
+  animation: fadeIn 1s ease-out;
+}

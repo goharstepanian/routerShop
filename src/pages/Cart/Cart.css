@@ -1,0 +1,12 @@
+.image{
+    width: 150px;
+    height: 200px;
+}
+.cart{
+    display: flex;
+    justify-content: space-around;
+    border:1px solid blue;
+    height: 300px;
+    text-align: center;
+    align-items: center;
+}
