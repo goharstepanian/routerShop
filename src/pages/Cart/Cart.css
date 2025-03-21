@@ -10,3 +10,20 @@
     text-align: center;
     align-items: center;
 }
+.cart-image{
+    width: 200px;
+    border-radius: 20px;
+}
+
+.cart-item{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    background-color: rgb(20, 20, 55);
+    border-radius: 20px;
+    margin: 20px 0;
+}
+p{
+    font-weight: 600;
+}

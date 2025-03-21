@@ -1,12 +1,8 @@
 import React from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Products.css";
 
-const Products = ({ products }) => {
-  let navigate = useNavigate();
-
-  const Buy = (prod) => navigate("/cart", { state: prod });
-
+const Products = ({ products, addToCart }) => {
   return (
     <div className="products-container">
       {products.map((prod) => {
@@ -20,7 +16,7 @@ const Products = ({ products }) => {
                 alt={prod.title}
               />
             </NavLink>
-            <button className="product-btn" onClick={() => Buy(prod)}>
+            <button className="product-btn" onClick={() => addToCart(prod)}>
               Buy
             </button>
           </div>

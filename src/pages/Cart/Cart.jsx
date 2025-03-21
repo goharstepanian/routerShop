@@ -1,22 +1,25 @@
 import React from 'react'
 import GoBackBtn from '../../components/GoBackBtn/GoBackBtn'
-import { useLocation } from 'react-router-dom'
 import "./Cart.css"
 
-const Cart = () => {
-    const obj = useLocation()
+const Cart = ({cart}) => {
   return (
-      <div >
-          <GoBackBtn />
-          <div className='cart'>
-              <img className="image" src={obj.state.image} alt={obj.state.title} />
-              <div>
-                  <h3>{obj.state.title}</h3>
-                  <strong>{ obj.state.price}$</strong>
-              </div>
+    <div>
+      <GoBackBtn />
+      {cart?.length === 0 ? (
+        <p>Cart is empty.</p>
+      ) : (
+        cart.map((item) => (
+          <div className="cart-item" key={item.id}>
+            <img src={item.image} alt={item.title} className="cart-image" />
+            <p>
+              {item.title} - ${item.price * item.count} (x{item.count})
+            </p>
           </div>
+        ))
+      )}
     </div>
-  )
+  );
 }
 
 export default Cart
