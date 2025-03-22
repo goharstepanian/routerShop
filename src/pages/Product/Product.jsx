@@ -9,13 +9,11 @@ const Product = () => {
   const [product, setProduct] = useState(null); 
 
   useEffect(() => {
-    function handleProductReq() {
+    {
       fetch(`https://fakestoreapi.com/products/${id}`) 
         .then((res) => res.json())
         .then((data) => setProduct(data));
     }
-
-    handleProductReq();
   }, [id]); 
 
   if (!product) {
