@@ -1,7 +1,21 @@
 .home{
-    background-image: url("../../assets/header.jpg");
-    height: 800px;
+    background-color: black;
+    display: flex;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding: 56px;
+    height: 500px;
+    gap:20px ;
+}
+
+.image{
+  width: 50%;
+  height: 72%;
+  border-radius: 20px;
+}
+.text{
+    font-size: clamp(24px,2vw,30px);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px  6px grey;
 }

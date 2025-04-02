@@ -1,9 +1,8 @@
-
 .header-container {
-  background-color: rgb(16, 35, 64); 
+  background-color: rgb(0, 0, 0); 
   padding: 40px 20px;
   text-align: center;
-  color: rgb(241, 241, 241);
+  color: rgb(255, 255, 255); 
   animation: fadeIn 1.5s ease-out;
 }
 
@@ -13,10 +12,9 @@
   margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: rgb(255, 255, 255); 
+  color: rgb(255, 255, 255);
   animation: slideInFromTop 1s ease-out;
 }
-
 
 .header-description {
   font-size: 1.2rem;

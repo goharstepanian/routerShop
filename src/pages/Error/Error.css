@@ -1,6 +1,6 @@
 .error-container {
-  background-color: rgb(26, 42, 58); 
-  color: rgb(241, 241, 241);
+  background-color: rgb(0, 0, 0); 
+  color: rgb(255, 255, 255);
   text-align: center;
   padding: 100px 20px;
   min-height: 100vh;
@@ -14,7 +14,7 @@
 .error-title {
   font-size: 4rem;
   font-weight: bold;
-  color: rgb(231, 76, 60); 
+  color: rgb(255, 255, 255); 
   margin-bottom: 20px;
   text-transform: uppercase;
 }
@@ -24,6 +24,7 @@
   color: rgb(220, 220, 220); 
   margin-top: 10px;
 }
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -32,3 +33,4 @@
     opacity: 1;
   }
 }
+

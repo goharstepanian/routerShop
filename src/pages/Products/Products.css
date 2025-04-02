@@ -1,14 +1,13 @@
-
 .products-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
   padding: 20px;
-  background-color: rgb(26, 42, 58);
+  background-color: rgb(0, 0, 0);
 }
 
 .product-card {
-  background-color: rgb(28, 61, 90);
+  background-color: rgb(35, 35, 35); 
   height: auto;
   padding: 20px;
   border-radius: 10px;
@@ -25,7 +24,7 @@
 
 .product-title {
   font-size: 1.6rem;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255); 
   margin-bottom: 10px;
   height: 30px;
   overflow: hidden;
@@ -39,13 +38,12 @@
 }
 
 .product-image:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
-
 .product-btn {
-  background-color: #57a6d1; 
-  color: rgb(255, 255, 255);
+  background-color: rgb(100, 100, 100); 
+  color: rgb(255, 255, 255); 
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -57,7 +55,7 @@
 }
 
 .product-btn:hover {
-  background-color: rgb(62, 125, 155); 
+  background-color: rgb(50, 50, 50); 
 }
 
 .product-btn:focus {
@@ -69,6 +67,4 @@
     opacity: 0;
   }
   to {
-    opacity: 1;
-  }
-}
+    opacity: 1;}}

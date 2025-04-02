@@ -1,7 +1,9 @@
 import { Route, Routes } from "react-router-dom";
 import { Layout, Home, Products, Product, Cart, Error } from "./index";
 import "./App.css";
-import { useEffect, useRef, useState } from "react";
+import { createContext, useEffect, useRef, useState } from "react";
+
+export const MyContext = createContext(null)
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -69,18 +71,29 @@ function App() {
   return (
     <>
       <div className="container">
-        <Routes>
-          <Route path="/" element={<Layout cart={cart} />}>
-            <Route index element={<Home />} />
-            <Route
-              path="/products"
-              element={<Products products={products} addToCart={addToCart} />}
-            />
-            <Route path="/product/:id" element={<Product />} />
-            <Route path="/cart" element={<Cart cart={cart} handleChangeQuantity={handleChangeQuantity} handleRemoveItem={handleRemoveItem } />} />
-          </Route>
-          <Route path="*" element={<Error />} />
-        </Routes>
+        <MyContext.Provider value={{cart,products,addToCart,handleChangeQuantity,handleRemoveItem}}>
+          <Routes>
+            <Route path="/" element={<Layout />}>
+              <Route index element={<Home />} />
+              <Route
+                path="/products"
+                element={<Products products={products} addToCart={addToCart} />}
+              />
+              <Route path="/product/:id" element={<Product />} />
+              <Route
+                path="/cart"
+                element={
+                  <Cart
+                    cart={cart}
+                    handleChangeQuantity={handleChangeQuantity}
+                    handleRemoveItem={handleRemoveItem}
+                  />
+                }
+              />
+            </Route>
+            <Route path="*" element={<Error />} />
+          </Routes>
+        </MyContext.Provider>
       </div>
     </>
   );

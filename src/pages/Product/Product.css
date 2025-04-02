@@ -1,12 +1,11 @@
-
 .product-section {
-  background-color: rgb(26, 42, 58); 
-  color: rgb(241, 241, 241); 
+  background-color: rgb(0, 0, 0); 
+  color: rgb(255, 255, 255); 
   padding: 20px;
 }
 
 .product-container {
-  background-color: rgb(28, 61, 90);
+  background-color: rgb(35, 35, 35); 
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   padding: 20px;
@@ -18,7 +17,7 @@
 
 .product-title {
   font-size: 2rem;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255); 
   margin-bottom: 15px;
 }
 
@@ -37,12 +36,12 @@
 .product-description {
   font-size: 1.1rem;
   line-height: 1.6;
-  color: rgb(220, 220, 220);
+  color: rgb(220, 220, 220); 
 }
 
 .product-price {
   font-size: 1.5rem;
-  color: rgb(87, 166, 209);
+  color: rgb(255, 255, 255);
   display: block;
   margin-top: 15px;
 }

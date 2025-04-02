@@ -1,12 +1,11 @@
-
 .go-back-btn-container {
   text-align: center;
   margin-bottom: 20px;
 }
 
 .go-back-btn {
-  background-color: rgb(87, 166, 209);
-  color: rgb(255, 255, 255);
+  background-color: rgb(63, 62, 62);
+  color: rgb(255, 255, 255); 
   padding: 12px 24px;
   font-size: 1.1rem;
   border: none;
@@ -16,9 +15,8 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-
 .go-back-btn:hover {
-  background-color: rgb(62, 125, 155);
+  background-color: rgb(40, 40, 40);
   transform: scale(1.05);
 }
 

@@ -1,61 +1,65 @@
-/* .image{
-    width: 150px;
-    height: 200px;
-} */
-.cart{
-    display: flex;
-    justify-content: space-around;
-    border:1px solid blue;
-    height: 300px;
-    /* text-align: center; */
-    align-items: center;
-}
-.cart-image{
-    width: 200px;
-    border-radius: 20px;
-    height: 250px;
+.cart {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid rgb(255, 255, 255); 
+  height: 300px;
+  align-items: center;
 }
 
-.cart-item{
-    gap: 10px;
-    display: flex;
-    align-items: center;
-    border: 1px solid white;
-    background-color: rgb(20, 20, 55);
-    border-radius: 20px;
-    margin: 20px 0;
-}
-p{
-    font-weight: 600;
+.cart-image {
+  width: 200px;
+  border-radius: 20px;
+  height: 250px;
 }
 
-.btns{
+.cart-item {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(255, 255, 255); 
+  background-color: rgb(20, 20, 20); 
+  border-radius: 20px;
+  margin: 20px 0;
+}
+
+p {
+  font-weight: 600;
+  color: rgb(255, 255, 255); 
+}
+
+.btns {
   display: flex;
   justify-content: space-between;
-
 }
 
-.remove-btn{
-    font-size: 14px;
-    border: none;
-    border-radius: 8px;
-    color: rgb(20, 20, 55) ;
-    font-weight: 600;
-    height: 35px;
-}
-.btn{
-    font-size: 14px;
-    height: 30px;
-    border: none;
-    border-radius: 8px;
-    color: rgb(20, 20, 55) ;
-    font-weight: 600;
-    width: 30px;
-    margin:0 5px;
-    font-size: 16px;
+.remove-btn {
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  color: rgb(255, 255, 255); 
+  font-weight: 600;
+  height: 35px;
+  background-color: transparent;
 }
 
-.remove-btn:hover{
-  border: 2px solid blue;
+.btn {
+  font-size: 14px;
+  height: 30px;
+  border: none;
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  width: 30px;
+  margin: 0 5px;
+  background-color: transparent;
+}
+
+.remove-btn:hover {
+  border: 2px solid rgb(255, 255, 255);
   padding: 6px;
+  background-color: rgb(0, 0, 0); 
+}
+
+.btn:hover {
+  background-color: rgb(0, 0, 0);
 }
